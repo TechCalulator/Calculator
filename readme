@@ -1,0 +1,143 @@
+# 🧮 Quantum Calculator (Django – Single File App)
+
+A **secure, modern, and feature-rich calculator** built using **Django in a single Python file**, featuring a futuristic UI, AST-based safe evaluation, scientific functions, percentage handling, and memory operations.
+
+---
+
+## ✨ Features
+
+### 🔐 Security First
+
+* **AST-based expression evaluation** (no `eval`)
+* Whitelisted math functions & operators
+* CSRF protection enabled
+* Input length & character validation
+
+### 🧠 Calculation Capabilities
+
+* Basic arithmetic: `+  −  ×  ÷`
+* Scientific functions:
+
+  * `sin`, `cos`, `tan` (degree-based)
+  * `log`, `ln`
+  * `√` (square root)
+* Constants: `π`, `e`
+* Percentage handling:
+
+  * `10%` → `0.1`
+  * `100 + 10%` → `110`
+* Parentheses support
+* Power operator (`**`)
+* High-precision decimal math
+
+### 💾 Memory Functions
+
+* `MC` – Memory Clear
+* `MR` – Memory Recall
+* `M+` – Memory Add
+* `M-` – Memory Subtract
+* Memory state saved in browser (LocalStorage)
+
+### 🎨 UI / UX
+
+* Dark futuristic “Quantum” theme
+* Responsive (mobile & desktop)
+* Keyboard support
+* Calculation history (last result)
+* Error feedback without page reload
+
+---
+
+## 🛠 Tech Stack
+
+* **Python 3.10+**
+* **Django 6.x**
+* HTML + CSS (embedded)
+* Vanilla JavaScript
+* Decimal arithmetic for precision
+
+---
+
+## 📂 Project Structure
+
+Single-file Django application:
+
+```
+calculator.py
+```
+
+No database, no migrations, no extra setup.
+
+---
+
+## 🚀 How to Run
+
+### 1️⃣ Install Django
+
+```bash
+pip install django
+```
+
+### 2️⃣ Run the calculator
+
+```bash
+python calculator.py
+```
+
+### 3️⃣ Open in browser
+
+```
+http://127.0.0.1:8000
+```
+
+That’s it ✅
+No settings file, no project creation, no manage.py.
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Key           | Action      |
+| ------------- | ----------- |
+| `0–9`         | Numbers     |
+| `+ - * /`     | Operators   |
+| `Enter` / `=` | Calculate   |
+| `Backspace`   | Delete      |
+| `Esc`         | Clear       |
+| `%`           | Percentage  |
+| `(` `)`       | Parentheses |
+| `M`           | Memory add  |
+
+---
+
+## ⚠️ Notes
+
+* This runs on **Django development server**
+* Not intended for production without WSGI/ASGI
+* Designed for **learning, demos, and portfolios**
+
+---
+
+## 📸 Screenshot
+
+![Quantum Calculator UI](screenshot.png)
+
+*(Replace `screenshot.png` with your actual image path)*
+
+---
+
+## 🧩 Highlights
+
+* No `eval()`
+* No external JS libraries
+* One-file Django app
+* Clean separation of UI, API, and evaluator
+* Excellent portfolio project
+
+---
+
+## 📜 License
+
+MIT License – free to use, modify, and share.
+
+
