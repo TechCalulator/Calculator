@@ -1,33 +1,32 @@
-.
-
 🧮 Quantum Calculator (Django – Single File App)
 
 A secure, modern, and feature-rich calculator built using Django in a single Python file, featuring a futuristic UI, AST-based safe evaluation, scientific functions, percentage handling, and memory operations.
 
+📸 Screenshot
+https://github.com/TechCalulator/Calculator/blob/main/screenshot.png
+
 ✨ Features
 🔐 Security First
+AST-based expression evaluation (no dangerous eval())
 
-AST-based expression evaluation (no eval)
-
-Whitelisted math functions & operators
+Whitelisted math functions & operators only
 
 CSRF protection enabled
 
 Input length & character validation
 
 🧠 Calculation Capabilities
-
 Basic arithmetic: + − × ÷
 
 Scientific functions:
 
 sin, cos, tan (degree-based)
 
-log, ln
+log (base 10), ln (natural log)
 
 √ (square root)
 
-Constants: π, e
+Constants: π (pi), e (Euler's number)
 
 Percentage handling:
 
@@ -35,14 +34,15 @@ Percentage handling:
 
 100 + 10% → 110
 
-Parentheses support
+50 * 20% → 10
 
-Power operator (**)
+Parentheses support: Full nested parentheses
+
+Power operator: ^ or **
 
 High-precision decimal math
 
 💾 Memory Functions
-
 MC – Memory Clear
 
 MR – Memory Recall
@@ -54,19 +54,21 @@ M- – Memory Subtract
 Memory state saved in browser (LocalStorage)
 
 🎨 UI / UX
+Dark futuristic "Quantum" theme with glowing effects
 
-Dark futuristic “Quantum” theme
+Fully responsive (mobile & desktop)
 
-Responsive (mobile & desktop)
+Full keyboard support
 
-Keyboard support
-
-Calculation history (last result)
+Calculation history (last 10 calculations)
 
 Error feedback without page reload
 
-🛠 Tech Stack
+Ripple animation effects
 
+Visual feedback on button presses
+
+🛠 Tech Stack
 Python 3.10+
 
 Django 6.x
@@ -78,26 +80,23 @@ Vanilla JavaScript
 Decimal arithmetic for precision
 
 📂 Project Structure
-
 Single-file Django application:
 
+text
 calculator.py
-
-
 No database, no migrations, no extra setup.
 
 🚀 How to Run
 1️⃣ Install Django
+bash
 pip install django
-
 2️⃣ Run the calculator
+bash
 python calculator.py
-
 3️⃣ Open in browser
+text
 http://127.0.0.1:8000
-
-
-That’s it ✅
+That's it! ✅
 No settings file, no project creation, no manage.py.
 
 ⌨️ Keyboard Shortcuts
@@ -110,26 +109,69 @@ Esc	Clear
 %	Percentage
 ( )	Parentheses
 M	Memory add
+.	Decimal point
+^	Power operator
 ⚠️ Notes
-
 This runs on Django development server
 
 Not intended for production without WSGI/ASGI
 
 Designed for learning, demos, and portfolios
 
-📸 Screenshot
-
-(Replace screenshot.png with your actual image path)
-
 🧩 Highlights
+No eval() - AST-based safe evaluation
 
-No eval()
+No external JS libraries - Pure vanilla JavaScript
 
-No external JS libraries
-
-One-file Django app
+One-file Django app - Easy to understand and deploy
 
 Clean separation of UI, API, and evaluator
 
-Excellent portfolio project
+Excellent portfolio project - Shows modern web dev skills
+
+🔧 Development Features
+Secure Expression Evaluation
+Uses Python's Abstract Syntax Tree (AST) module to parse and evaluate expressions safely, preventing code injection attacks.
+
+Memory Management
+Browser-based LocalStorage keeps memory values persistent across sessions.
+
+Error Handling
+Graceful error messages without page reloads for better user experience.
+
+Responsive Design
+Optimized for all screen sizes from desktop to mobile.
+
+📱 Mobile Features
+Touch-optimized buttons
+
+Responsive layout
+
+Adaptive font sizes
+
+Gesture support (coming soon)
+
+🔒 Security Features
+AST Parser: No arbitrary code execution
+
+CSRF Protection: Built-in Django security
+
+Input Validation: Whitelisted characters only
+
+Expression Limits: Prevent DoS attacks
+
+🎯 Example Calculations
+python
+# Basic arithmetic
+"5 + 3 * 2" → 11
+
+# Scientific functions
+"sin(30) + cos(60)" → 1.0
+
+# Percentage operations
+"100 + 20%" → 120
+
+# Constants
+"2 * π" → 6.283185307179586
+🤝 Contributing
+While this is a single-file project, suggestions and improvements are welcome! Feel free to fork and modify for your own needs.
